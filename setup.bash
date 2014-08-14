@@ -13,8 +13,8 @@ git clone https://github.com/mostateresnet/rcrproject.git
 cd rcrproject
 source "$(which virtualenvwrapper.sh)"
 mkvirtualenv rcrproject
-pip install -r requirements.txt
-pip install psycopg2
+sudo pip install -r requirements.txt
+sudo pip install psycopg2
 ./manage.py syncdb
 ./manage.py migrate
 
